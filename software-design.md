@@ -18,14 +18,14 @@ For the enhancement, I improved the structure of the application and added stron
 
 Some of the main improvements included:
 
-- Added a separate MongoDB connection file
-- Added a Mongoose schema for trip data
-- Added a controller for retrieving trip records
-- Added an API route for trip data
-- Added a script for loading sample trips into MongoDB
-- Improved error handling
-- Added an error page
-- Better separated the database, controller, routes, and views
+* Added a separate MongoDB connection file
+* Added a Mongoose schema for trip data
+* Added a controller for retrieving trip records
+* Added an API route for trip data
+* Added a script for loading sample trips into MongoDB
+* Improved error handling
+* Added an error page
+* Better separated the database, controller, routes, and views
 
 [Download the Enhanced Travlr Artifact](02_Software_Design_Enhanced_Travlr.zip)
 
@@ -33,17 +33,70 @@ Some of the main improvements included:
 
 This enhancement helped me demonstrate skills with:
 
-- Node.js
-- Express
-- MongoDB
-- Mongoose
-- Handlebars
-- JavaScript
-- API routes
-- MVC design
-- Error handling
-- Database connections
-- Git and GitHub
+* Node.js
+* Express
+* MongoDB
+* Mongoose
+* Handlebars
+* JavaScript
+* API routes
+* MVC design
+* Error handling
+* Database connections
+* Git and GitHub
+
+## Code Example
+
+One of the main improvements was creating a Mongoose schema for the trip data. This gives each trip a clear structure and requires the main fields before the record can be saved.
+
+```javascript
+const mongoose = require('mongoose');
+
+const tripSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    length: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    price: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    image: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    description: {
+        type: String,
+        required: true,
+        trim: true
+    }
+});
+
+mongoose.model('trips', tripSchema);
+```
+
+I also created a controller that gets the trip information from MongoDB and returns it as JSON.
+
+```javascript
+const tripsList = async (req, res) => {
+    try {
+        const trips = await Trip.find();
+        res.json(trips);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+};
+```
+
+These changes helped separate the database model and controller logic instead of keeping everything together.
 
 ## What I Learned
 
