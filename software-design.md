@@ -55,4 +55,4 @@ I also had to fix problems with the database seed data and update older Mongoose
 
 ## Enhancement Narrative
 
-The full narrative for this enhancement explains why I selected the artifact, what I changed, the skills I demonstrated, and how the enhancement connects to the CS 499 course outcomes.
+[Read the Full Enhancement Narrative](software-design-narrative.md)
