@@ -18,6 +18,8 @@ My code review explains the original artifacts, areas that needed improvement, a
 
 For this enhancement, I used my Travlr Getaways project from CS 465. I improved the project by organizing the application structure and adding MongoDB and Mongoose for managing trip data.
 
+[View Software Design and Engineering Project](software-design.md)
+
 - [Original Travlr Artifact](01_Software_Design_Original_Travlr.zip)
 - [Enhanced Travlr Artifact](02_Software_Design_Enhanced_Travlr.zip)
 - Enhancement Narrative: Coming soon
