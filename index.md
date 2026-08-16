@@ -28,6 +28,8 @@ For this enhancement, I used my Travlr Getaways project from CS 465. I improved 
 
 For this enhancement, I used my CS 320 Project One application. I kept the HashMap structure for fast record lookup and added sorting and a PriorityQueue to improve how records and appointments are handled.
 
+[View Algorithms and Data Structures Project](algorithms.md)
+
 - [Original CS 320 Artifact](03_Algorithms_Original_CS320.zip)
 - [Enhanced CS 320 Artifact](04_Algorithms_Enhanced_CS320.zip)
 - Enhancement Narrative: Coming soon
