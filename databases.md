@@ -68,4 +68,4 @@ The service checks for empty values and invalid record IDs before sending inform
 
 ## Enhancement Narrative
 
-The full narrative for this enhancement explains why I selected the artifact, what I changed, what I learned, and how the enhancement connects to the CS 499 course outcomes.
+[Read the Full Enhancement Narrative](databases-narrative.md)
