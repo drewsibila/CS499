@@ -6,13 +6,13 @@ This portfolio shows my growth throughout the Computer Science program and inclu
 
 ## Professional Self-Assessment
 
-My professional self-assessment will be added here as the main introduction to my portfolio.
+[Read My Professional Self-Assessment](self-assessment.md)
 
 ## Code Review
 
-My code review explains the original artifacts, areas that needed improvement, and the enhancements I planned.
+This code review explains the original artifacts, the areas I found that could be improved, and the enhancements I planned for software design and engineering, algorithms and data structures, and databases.
 
-**Code Review Video:** Coming soon
+[Watch My Code Review Video](https://youtu.be/x9n4TsXQBHo)
 
 ## Software Design and Engineering
 
