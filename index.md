@@ -6,41 +6,41 @@ This portfolio shows my growth throughout the Computer Science program and inclu
 
 ## Professional Self-Assessment
 
-My professional self-assessment will be presented here as the introduction to my portfolio.
+My professional self-assessment will be added here as the main introduction to my portfolio.
 
 ## Code Review
 
 My code review explains the original artifacts, areas that needed improvement, and the enhancements I planned.
 
-[View Code Review](PASTE-YOUTUBE-LINK-HERE)
+**Code Review Video:** Coming soon
 
 ## Software Design and Engineering
 
 For this enhancement, I used my Travlr Getaways project from CS 465. I improved the project by organizing the application structure and adding MongoDB and Mongoose for managing trip data.
 
-- [Original Artifact](artifacts/software-design/original/)
-- [Enhanced Artifact](artifacts/software-design/enhanced/)
-- [Enhancement Narrative](narratives/software-design.md)
+- [Original Travlr Artifact](01_Software_Design_Original_Travlr.zip)
+- [Enhanced Travlr Artifact](02_Software_Design_Enhanced_Travlr.zip)
+- Enhancement Narrative: Coming soon
 
 ## Algorithms and Data Structures
 
-For this enhancement, I used my CS 320 project. I kept the HashMap structure for fast record lookup and added sorting and a PriorityQueue to improve the way records and appointments are handled.
+For this enhancement, I used my CS 320 Project One application. I kept the HashMap structure for fast record lookup and added sorting and a PriorityQueue to improve how records and appointments are handled.
 
-- [Original Artifact](artifacts/algorithms/original/)
-- [Enhanced Artifact](artifacts/algorithms/enhanced/)
-- [Enhancement Narrative](narratives/algorithms.md)
+- [Original CS 320 Artifact](03_Algorithms_Original_CS320.zip)
+- [Enhanced CS 320 Artifact](04_Algorithms_Enhanced_CS320.zip)
+- Enhancement Narrative: Coming soon
 
 ## Databases
 
 For this enhancement, I used my Java calculator project from CS 310. I added SQLite database storage so completed calculations can be saved, viewed, and managed.
 
-- [Original Artifact](artifacts/databases/original/)
-- [Enhanced Artifact](artifacts/databases/enhanced/)
-- [Enhancement Narrative](narratives/databases.md)
+- [Original CS 310 Calculator](05_Databases_Original_CS310.zip)
+- [Enhanced CS 310 SQLite Calculator](Databases_Enhanced_CS310_SQLite_CLEAN.zip)
+- Enhancement Narrative: Coming soon
 
 ## Skills Demonstrated
 
-Throughout these projects I demonstrated skills in:
+Throughout these projects, I demonstrated skills in:
 
 - Java
 - JavaScript
