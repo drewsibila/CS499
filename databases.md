@@ -18,17 +18,17 @@ For the enhancement, I added a SQLite database so the calculator can save and ma
 
 Some of the main improvements included:
 
-- Added SQLite database storage
-- Added JDBC database support
-- Added a calculation record class
-- Added a database class
-- Added a service class for database logic
-- Added calculation history to the user interface
-- Added refresh and clear history options
-- Added input validation
-- Added prepared statements
-- Added error handling
-- Added nine new database tests
+* Added SQLite database storage
+* Added JDBC database support
+* Added a calculation record class
+* Added a database class
+* Added a service class for database logic
+* Added calculation history to the user interface
+* Added refresh and clear history options
+* Added input validation
+* Added prepared statements
+* Added error handling
+* Added nine new database tests
 
 [Download the Enhanced CS 310 SQLite Calculator](Databases_Enhanced_CS310_SQLite_CLEAN.zip)
 
@@ -36,19 +36,71 @@ Some of the main improvements included:
 
 This enhancement helped me demonstrate skills with:
 
-- Java
-- SQLite
-- JDBC
-- Database design
-- Persistent data storage
-- SQL
-- Prepared statements
-- Input validation
-- Error handling
-- JUnit testing
-- Maven
-- Tycho
-- OSGi
+* Java
+* SQLite
+* JDBC
+* Database design
+* Persistent data storage
+* SQL
+* Prepared statements
+* Input validation
+* Error handling
+* JUnit testing
+* Maven
+* Tycho
+* OSGi
+
+## Code Example
+
+For the database enhancement, I created a SQLite table that stores the expression, result, and date of each calculation.
+
+```java
+String sql =
+        "CREATE TABLE IF NOT EXISTS calculation_history ("
+        + "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+        + "expression TEXT NOT NULL, "
+        + "result TEXT NOT NULL, "
+        + "created_at TEXT NOT NULL"
+        + ")";
+```
+
+I also used prepared statements when saving calculations.
+
+```java
+String sql =
+        "INSERT INTO calculation_history "
+        + "(expression, result, created_at) "
+        + "VALUES (?, ?, ?)";
+
+try (Connection connection = database.getConnection();
+        PreparedStatement statement =
+                connection.prepareStatement(sql)) {
+
+    statement.setString(1, expression.trim());
+    statement.setString(2, result.trim());
+    statement.setString(
+            3,
+            LocalDateTime.now().format(DATE_FORMAT));
+
+    statement.executeUpdate();
+}
+```
+
+Before saving anything, the service checks that the values are not empty.
+
+```java
+private void validateText(
+        String value,
+        String fieldName) {
+
+    if (value == null || value.trim().isEmpty()) {
+        throw new IllegalArgumentException(
+                fieldName + " cannot be empty.");
+    }
+}
+```
+
+This shows how the enhanced calculator stores data while also using validation and prepared statements to make the database handling safer.
 
 ## What I Learned
 
