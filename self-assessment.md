@@ -18,6 +18,12 @@ Security is something I have also learned to pay more attention to. I used input
 
 Outside of the three artifacts in this portfolio, I also worked on projects involving object-oriented programming, software testing, graphics, databases, and secure coding. I also learned about newer technology like generative AI. I think AI can be useful for helping with things like explaining errors, checking code, and creating tests, but I also learned that you still have to review the results and make sure everything actually works.
 
+## Collaboration and Communication
+
+Throughout the program, I also learned how important communication and collaboration are in computer science. Even when I was working on an individual project, I still had to think about how another developer, instructor, or stakeholder would understand my work. I used feedback, code reviews, comments, documentation, and testing results to explain my decisions and show why I made certain changes.
+
+The code review for this portfolio also helped me practice explaining technical problems and planned improvements in a way that another person could understand. I think this is important because software decisions are not made only for the developer. They also affect users, team members, and the people responsible for the project.
+
 The three artifacts in this portfolio show different parts of what I learned. My Travlr Getaways project shows my software design and engineering skills. My CS 320 project shows my understanding of algorithms and data structures. My CS 310 calculator shows my database skills by adding SQLite storage and calculation history to an existing program.
 
 Together, these projects show that I can take an existing program, understand how it works, find problems, improve it, and test the final result. They also show that I can work with different programming languages, tools, databases, and testing methods depending on what the project needs.
