@@ -18,15 +18,15 @@ For the enhancement, I kept the HashMap because it was still a good choice for f
 
 Some of the main improvements included:
 
-- Added sorting for contacts by last name and first name
-- Added sorting for tasks by name
-- Added sorting for appointments by date
-- Added a PriorityQueue for appointments
-- Improved validation
-- Improved duplicate ID handling
-- Improved error handling for missing records
-- Added defensive copying for appointment dates
-- Expanded JUnit testing
+* Added sorting for contacts by last name and first name
+* Added sorting for tasks by name
+* Added sorting for appointments by date
+* Added a PriorityQueue for appointments
+* Improved validation
+* Improved duplicate ID handling
+* Improved error handling for missing records
+* Added defensive copying for appointment dates
+* Expanded JUnit testing
 
 [Download the Enhanced CS 320 Artifact](04_Algorithms_Enhanced_CS320.zip)
 
@@ -34,17 +34,56 @@ Some of the main improvements included:
 
 This enhancement helped me demonstrate skills with:
 
-- Java
-- HashMap
-- PriorityQueue
-- Sorting
-- Comparators
-- Data structures
-- Algorithms
-- Validation
-- Error handling
-- JUnit testing
-- Java collections
+* Java
+* HashMap
+* PriorityQueue
+* Sorting
+* Comparators
+* Data structures
+* Algorithms
+* Validation
+* Error handling
+* JUnit testing
+* Java collections
+
+## Code Example
+
+One of my main algorithm and data structure improvements was adding a PriorityQueue to find the next appointment by date.
+
+```java
+public Appointment getNextAppointment() {
+    if (appointments.isEmpty()) {
+        throw new IllegalStateException(
+                "No appointments are available");
+    }
+
+    PriorityQueue<Appointment> queue =
+            new PriorityQueue<>(
+                    Comparator.comparing(
+                            Appointment::getAppointmentDate));
+
+    queue.addAll(appointments.values());
+
+    return queue.peek();
+}
+```
+
+I also added sorting so contacts can be returned in a clear order.
+
+```java
+public List<Contact> getContactsSortedByLastName() {
+    List<Contact> sortedContacts =
+            new ArrayList<>(contacts.values());
+
+    sortedContacts.sort(
+            Comparator.comparing(Contact::getLastName)
+                    .thenComparing(Contact::getFirstName));
+
+    return sortedContacts;
+}
+```
+
+The HashMap is still useful for fast lookup by ID, while sorting and the PriorityQueue are used when the program needs the information in a specific order.
 
 ## What I Learned
 
