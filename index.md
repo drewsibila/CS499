@@ -18,7 +18,7 @@ My professional self-assessment explains what I learned throughout the Computer 
 
 My code review explains the original artifacts, areas that could be improved, and the enhancements I planned throughout the capstone.
 
-[Watch My Code Review Video](https://youtu.be/x9n4TsXQBHo)
+[Watch My Code Review Video](https://www.youtube.com/watch?v=iknoipBI9Fc)
 
 ---
 
